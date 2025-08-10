@@ -1,0 +1,143 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #7ed3efab;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #5fccff, #fe7bbf);
+    color: rgb(42, 2, 27);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+header .search-box input {
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    height: 460px;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #5fccff, #fe7bf5);
+}
+.welcome h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #03032ac4;
+}
+.welcome p {
+    color: #080404;
+}
+
+/* GALLERY - MENU ITEMS */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #fe7bb6, #5fccff);
+    padding: 20px 10px;
+}
+.gallery-item {
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.gallery-item:nth-child(1) { background-image: url('https://images.eatsmarter.com/sites/default/files/styles/max_size/public/marinated-mullet-489967.jpg'); }
+.gallery-item:nth-child(2) { background-image: url('https://assets.surlatable.com/m/15a89c2d9c6c1345/72_dpi_webp-REC-283110_Pizza.jpg'); }
+.gallery-item:nth-child(3) { background-image: url('https://currygurutweed.co.nz/wp-content/uploads/2020/06/Butter-Chicken.jpg'); }
+.gallery-item:nth-child(4) { background-image: url('https://makewinelab.com/wp-content/uploads/2023/04/wine-from-concord-grapes-1024x1024.jpg'); }
+.gallery-item:nth-child(5) { background-image: url('https://friendlywell.com/wp-content/uploads/2024/12/3-18-768x768.jpeg'); }
+.gallery-item:nth-child(6) { background-image: url('https://www.thechunkychef.com/wp-content/uploads/2015/02/Spaghetti-Bolognese-Sauce-4.jpg'); }
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* CONTENT SECTIONS */
+.content {
+    padding: 20px;
+    background: linear-gradient(90deg, #fea8cf, #c46bfb);
+}
+.content-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.content-item.reverse {
+    flex-direction: row-reverse;
+}
+.content-item img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 30%;
+}
+.content-item .text {
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.content-item h2 {
+    color: #860f0f;
+}
+.content-item p {
+    color: #000000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #040404;
+    color: rgb(232, 230, 230);
+    margin-top: 20px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .content-item img, .content-item .text {
+        width: 100%;
+    }
+}
